@@ -11,7 +11,11 @@ public class Controller {
         customer1.setPostalCode("12209");
         customer1.setCountry("Germany");
 
-        System.out.println(customer1);
+//        System.out.println(customer1);
+        customer1.print();
+        Customers customer2 = new Customers(2, "Ana Trujillo Emparedados y helados", "Ana Trujillo", "Avda. de la Constitución 2222", "México D.F.", "05021", "Mexico");
+        customer2.print();
+
 
         Categories category1 = new Categories();
         category1.setCategoryID(1);
