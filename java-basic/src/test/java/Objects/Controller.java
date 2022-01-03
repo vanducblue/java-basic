@@ -1,7 +1,7 @@
-package DatabaseJava;
+package Objects;
 
 public class Controller {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Customers customer1 = new Customers();
         customer1.setCustomerID(1);
         customer1.setCustomerName("Alfreds Futterkiste");
@@ -11,9 +11,9 @@ public class Controller {
         customer1.setPostalCode("12209");
         customer1.setCountry("Germany");
 
-//        System.out.println(customer1);
         customer1.print();
-        Customers customer2 = new Customers(2, "Ana Trujillo Emparedados y helados", "Ana Trujillo", "Avda. de la Constitución 2222", "México D.F.", "05021", "Mexico");
+        Customers customer2 = new Customers(2, "Ana Trujillo Emparedados y helados", "Ana Trujillo",
+                "Avda. de la Constitución 2222", "México D.F.", "05021", "Mexico");
         customer2.print();
 
 
@@ -30,7 +30,8 @@ public class Controller {
         emp1.setFirstName("Nancy");
         emp1.setBirthDate("1968-12-08");
         emp1.setPhoto("EmpID1.pic");
-        emp1.setNotes("Education includes a BA in psychology from Colorado State University. She also completed (The Art of the Cold Call). Nancy is a member of 'Toastmasters International'.");
+        emp1.setNotes("Education includes a BA in psychology from Colorado State University. " +
+                "She also completed (The Art of the Cold Call). Nancy is a member of 'Toastmasters International'.");
 
         System.out.println(emp1);
 
@@ -51,13 +52,13 @@ public class Controller {
 
         System.out.println(order1);
 
-       Products product1 = new Products();
-       product1.setProductID(1);
-       product1.setProductName("Chais");
-       product1.setSupplierID(1);
-       product1.setCategoryID(1);
-       product1.setUnit("10 boxes x 20 bags");
-       product1.setPrice(18.0);
+        Products product1 = new Products();
+        product1.setProductID(1);
+        product1.setProductName("Chais");
+        product1.setSupplierID(1);
+        product1.setCategoryID(1);
+        product1.setUnit("10 boxes x 20 bags");
+        product1.setPrice(18.0);
 
         System.out.println(product1);
 

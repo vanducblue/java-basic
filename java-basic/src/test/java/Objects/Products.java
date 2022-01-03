@@ -1,4 +1,4 @@
-package DatabaseJava;
+package Objects;
 
 public class Products {
     int ProductID;
@@ -8,10 +8,6 @@ public class Products {
     String Unit;
     Double Price;
 
-    @Override
-    public String toString() {
-        return "ProductID: " + this.ProductID + ", ProductName: " + this.ProductName + ", SupplierID: " + this.SupplierID + ", CategoryID: " + this.CategoryID + ", Unit: " + this.Unit + ", Price: " + this.Price;
-    }
 
     public int getProductID() {
         return ProductID;
@@ -61,7 +57,9 @@ public class Products {
         Price = price;
     }
 
-
-
-
+    @Override
+    public String toString() {
+        return "ProductID: " + this.ProductID + ", ProductName: " + this.ProductName + ", SupplierID: " + this.SupplierID
+                + ", CategoryID: " + this.CategoryID + ", Unit: " + this.Unit + ", Price: " + this.Price;
+    }
 }

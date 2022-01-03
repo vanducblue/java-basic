@@ -1,4 +1,4 @@
-package DatabaseJava;
+package Objects;
 
 public class Employees {
     int EmployeeID;
@@ -8,10 +8,6 @@ public class Employees {
     String Photo;
     String Notes;
 
-    @Override
-    public String toString(){
-        return "EmployeeID: " + this.EmployeeID + ", LastName: " + this.LastName + " , FirstName: " + this.FirstName + ", BirthDate: " + this.BirthDate + ", Photo: " + this.Photo + ", Notes: " + this.Notes;
-    }
 
     public int getEmployeeID() {
         return EmployeeID;
@@ -61,7 +57,8 @@ public class Employees {
         Notes = notes;
     }
 
-
-
-
+    @Override
+    public String toString() {
+        return "EmployeeID: " + this.EmployeeID + ", LastName: " + this.LastName + " , FirstName: " + this.FirstName + ", BirthDate: " + this.BirthDate + ", Photo: " + this.Photo + ", Notes: " + this.Notes;
+    }
 }

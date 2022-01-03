@@ -1,4 +1,4 @@
-package DatabaseJava;
+package Objects;
 
 public class Categories {
 
@@ -31,11 +31,8 @@ public class Categories {
     }
 
     @Override
-    public String toString(){
-        return "CategoryID: " + this.CategoryID + ", CategoryName: " + this.CategoryName + ", Description: " + this.Description;
+    public String toString() {
+        return "CategoryID: " + this.CategoryID + ", CategoryName: " + this.CategoryName +
+                ", Description: " + this.Description;
     }
-
-
-
-
 }

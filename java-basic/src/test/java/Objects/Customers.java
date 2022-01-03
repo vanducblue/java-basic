@@ -1,4 +1,4 @@
-package DatabaseJava;
+package Objects;
 
 public class Customers {
     int CustomerID;
@@ -11,13 +11,25 @@ public class Customers {
 
 
     /**
-     * try to print object with another way
+     * this is a contructor
      */
     public Customers() {
 
     }
 
-    public Customers(int CustomerID, String CustomerName, String ContactName, String Address, String City, String PostalCode, String Country) {
+    /**
+     * this is another contructor with parameter
+     *
+     * @param CustomerID
+     * @param CustomerName
+     * @param ContactName
+     * @param Address
+     * @param City
+     * @param PostalCode
+     * @param Country
+     */
+    public Customers(int CustomerID, String CustomerName, String ContactName, String Address,
+                     String City, String PostalCode, String Country) {
         this.CustomerID = CustomerID;
         this.CustomerName = CustomerName;
         this.ContactName = ContactName;
@@ -27,10 +39,6 @@ public class Customers {
         this.Country = Country;
     }
 
-    /**
-     * Getter & Setter
-     * @return
-     */
 
     public int getCustomerID() {
         return CustomerID;
@@ -88,13 +96,15 @@ public class Customers {
         Country = country;
     }
 
-    
+
     @Override
-    public String toString(){
-        return "CustomerID: " + this.CustomerID + ", CustomerName: " + this.CustomerName + ", ContactName: " + this.ContactName + ", Address: " + this.Address + ", City: " + this.City + ", PostalCode: " + this.PostalCode + ", Country: " + this.Country;
+    public String toString() {
+        return "CustomerID: " + this.CustomerID + ", CustomerName: " + this.CustomerName + ", ContactName: " +
+                this.ContactName + ", Address: " + this.Address + ", City: " + this.City +
+                ", PostalCode: " + this.PostalCode + ", Country: " + this.Country;
     }
 
-    public void print(){
+    public void print() {
         System.out.println("CustomerID: " + this.getCustomerID());
         System.out.println("CustomerName: " + this.getCustomerName());
         System.out.println("ContactName: " + this.getContactName());
@@ -103,9 +113,4 @@ public class Customers {
         System.out.println("PostalCode: " + this.getPostalCode());
         System.out.println("Country: " + this.getCountry());
     }
-
-
-
-
-
 }
